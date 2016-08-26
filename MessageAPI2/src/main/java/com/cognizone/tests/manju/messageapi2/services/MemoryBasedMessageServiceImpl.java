@@ -64,4 +64,15 @@ public class MemoryBasedMessageServiceImpl implements MessageService{
 		
 		return message;
 	}
+
+	@Override
+	public boolean deleteMessageById(BigInteger id) {
+		Message message = messagesMap.remove(id);
+		
+		if (message == null ){
+			return false;
+		}
+		
+		return true;
+	}
 }

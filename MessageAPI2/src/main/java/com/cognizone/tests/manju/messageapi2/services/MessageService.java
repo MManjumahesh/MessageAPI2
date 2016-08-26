@@ -15,4 +15,6 @@ public interface MessageService {
 	
 	
 	public Message getMessageById(BigInteger id);
+	
+	public boolean deleteMessageById(BigInteger id);
 }

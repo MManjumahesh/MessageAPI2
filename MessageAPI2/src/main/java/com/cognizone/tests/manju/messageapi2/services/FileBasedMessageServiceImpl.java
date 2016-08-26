@@ -31,6 +31,12 @@ public class FileBasedMessageServiceImpl implements MessageService{
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public boolean deleteMessageById(BigInteger id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 	
 	
 	
